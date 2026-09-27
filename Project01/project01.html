@@ -1,0 +1,207 @@
+<!DOCTYPE html>
+
+<html lang=""en">
+<head>
+    <meta charset="utf-8">
+    <title>Bend</title>
+    <link rel="stylesheet" href="project01.css">
+    <style>@keyframes blink{50%{opacity:0}}</style>
+</head>
+<body>
+    <div>
+        <div>
+            <header>
+                <span>
+                    <a>~/bend</a>
+                </span>
+                <nav>
+                    <a href="#">
+                        <svg viewbox="0 0 24 24">
+                            <path></path>
+                        </svg>
+                    </a>
+                    <ah ref="#">
+                        <svg viewbox="0 0 24 24">
+                            <path></path>
+                        </svg>
+                    </a>
+                    <a href="#">
+                        <svg viewbox="0 0 24 24">
+                            <path></path>
+                        </svg>
+                    </a>
+                    <a href="#">
+                        <svg viewbox="0 0 24 24"></svg>
+                    </a>
+                    <a href="#">hub</a>
+                    <a href="#">bender</a>
+                    <a class="getBend" href="#">get bend</a>
+                </nav>
+            </header>
+            <div id="Heading">
+                <h1>
+                Bend
+                </h1>
+                <p class="sub">
+                    "a "
+                    <b>fast</b>
+                    " language that "
+                    <b>blocks AI mistakes</b>
+                    " via "
+                    <b>proof</b>
+                </p>
+                <p class="tag">
+                    <b>C</b>
+                    " speed · "
+                    <b>CUDA</b>
+                    "  parallelism ·  "
+                    <b>Lean</b>
+                    "  proofs · "
+                    <b>Python</b>
+                    "  syntax"
+                </p>
+            </div>
+            <div id="intro">
+                <p>
+                  "In the post-AGI economy, humans will eventually stop writing
+                    and reading code, but we still need an ambiguity-free way to
+                    tell the AIs building the world around us what we want done."  
+                </p>
+                <p>
+                    "With laws, our intents can be much more precise than natural
+                    language. With proofs, we can verify that the AI implemented
+                    our prompts correctly. And a fast compiler runs it at speed."
+                </p>
+            </div>
+            <section>
+                <h2>
+                    <span>1.</span>
+                    "Bend runs"
+                    <b>FAST</b>
+                    "."
+                </h2>
+                <p>
+                    "Bend compiles to native code. On one core, it runs nearly as
+                    fast as C. The same binary also runs on sixteen cores, or on
+                    the GPU, running up to a hundred times faster than one core."
+                </p>
+                <figure class="chart">
+                    <p class="chartTitle">game of life</p>
+                    <div class="bars on">
+                        <div class="bar">
+                            <b>18.8s</b>
+                            <i></i>
+                            <span>TypeScript</span>
+                        </div>
+                        <div class="bar">
+                            <b>13.8s</b>
+                            <i></i>
+                            <span>Lean</span>
+                        </div>
+                        <div class="bar">
+                            <b>6.78s</b>
+                            <i></i>
+                            <span>C</span>
+                        </div>
+                        <div class="bar bend">
+                            <b>
+                                <em>1x</em>
+                                "7.80s"
+                            </b>
+                            <i></i>
+                            <span>
+                                Bend
+                                <br>
+                                1 core
+                            </span>
+                        </div>
+                        <div class="bar bend">
+                            <b>
+                                <em>12x</em>
+                                "0.65s"
+                            </b>
+                            <i></i>
+                            <span>
+                                Bend
+                                <br>
+                                16 cores
+                            </span>
+                        </div>
+                        <div class="bar bend">
+                            <b>
+                                <em>1x</em>
+                                "0.06s"
+                            </b>
+                            <i></i>
+                            <span>
+                                Bend
+                                <br>
+                                GPU
+                            </span>
+                        </div>
+                    </div>
+                    <div class="dots">
+                        <a><<</a>
+                        <a class="on" title="game of life">o</a>
+                        <a class title="breadth-first search">o</a>
+                        <a class title="tree bitonic sort">o</a>
+                        <a class title="edit distance">o</a>
+                        <a class title="hashmap">o</a>
+                        <a class title="k-means">o</a>
+                        <a class title="lexer">o</a>
+                        <a class title="mandelbrot">o</a>
+                        <a class title="tree matrix multiply">o</a>
+                        <a class title="merkle tree">o</a>
+                        <a class title="n-body">o</a>
+                        <a class title="n-queens">o</a>
+                        <a class title="tree radix sort">o</a>
+                        <a class title="ray tracer">o</a>
+                        <a class title="symbolic regression">o</a>
+                        <a class title="terrain">o</a>
+                        <a>>></a>
+                    </div>
+                    <figcaption>Apple M4 Max · lower is better</figcaption>
+                </figure>
+            </section>
+            <section>
+                <h2>
+                    <span>2.</span>
+                    "Bend compiles"
+                    <b>FAST</b>
+                    "."
+                </h2>
+                <p>
+                    "Bend's type checker is a proof checker, as in Lean and Rocq.
+                    Those can take minutes on a mid-sized codebase. Bend takes a
+                    second at most, so an AI agent can check after every change."
+                </p>
+                <figure class="chart">
+                    <p class="chartTitle"></p>
+                    <div class="bars"></div></div>
+                    <div clas="dots"></div>
+                </figure>
+            </section>
+            <section>
+                <h2>
+                    <span>3.</span>
+                    "Bend is"
+                    <b>PARALLEL</b>
+                    "."
+                </h2>
+                <p>
+                    "No threads, no locks, no kernels to write. Split the work in
+                    two, and Bend spreads the calls over every core it can find,
+                    then joins them back. Now watch pow2 run on 4,096 GPU cores:""
+                </p>
+                <figure>
+                    <canvas width="186" height="186"></canvas>
+                    <figcaption>
+                        "pow2.bend running on the "
+                        <b>GPU</b>
+                    </figcaption>
+                </figure>
+            </section>
+        </div>
+    </div>
+</body>
+</html>
